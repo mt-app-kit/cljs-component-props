@@ -21,7 +21,7 @@
   ;
   ; @return (map)
   [component-id & [default-props]]
-  (if-let [dynamic-props (common-state/get-state :dynamic-props component-id)]
+  (if-let [dynamic-props (common-state/get-state :component-props component-id)]
           (-> default-props (map/deep-merge dynamic-props))
           (or default-props {})))
 
@@ -41,7 +41,7 @@
   ;
   ; @return (*)
   [component-id prop-key & [default-props]]
-  (if-let [dynamic-props (common-state/get-state :dynamic-props component-id)]
+  (if-let [dynamic-props (common-state/get-state :component-props component-id)]
           (get dynamic-props prop-key)))
 
 ;; ----------------------------------------------------------------------------
@@ -64,6 +64,6 @@
   ;
   ; @return (map)
   [component-id & [component-props default-props]]
-  (if-let [dynamic-props (common-state/get-state :dynamic-props component-id)]
+  (if-let [dynamic-props (common-state/get-state :component-props component-id)]
           (-> component-props (map/deep-merge dynamic-props))
           (or component-props {})))

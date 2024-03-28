@@ -18,4 +18,4 @@
   ; @usage
   ; (reg-preset! :my-preset (fn [props] (assoc props :my-key "My value")))
   [preset-id preset]
-  (common-state/assoc-state! :preset-props :preset-pool preset-id preset))
+  (common-state/assoc-state! :component-presets :preset-pool preset-id preset))

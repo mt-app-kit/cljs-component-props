@@ -21,7 +21,7 @@
   ;
   ; @return (map)
   [component-props preset]
-  (if-let [preset (common-state/get-state :preset-props :preset-pool preset)]
+  (if-let [preset (common-state/get-state :component-presets :preset-pool preset)]
           (letfn [(f0 [%] (preset %))
                   (f1 [%] (map/reversed-deep-merge % preset))]
                  (cond-> component-props (-> preset fn?)  (f0)
