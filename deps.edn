@@ -1,5 +1,5 @@
 
-{:paths ["source-code/cljc"]
+{:paths ["source-code/cljs"]
  :deps  {mt-app-kit/cljc-common-state {:git/url "https://github.com/mt-app-kit/cljc-common-state"
                                        :sha     "a352e86302adccfc0e8589c5d4fc36d46eda0171"}
          bithandshake/cljc-fruits     {:git/url "https://github.com/bithandshake/cljc-fruits"
