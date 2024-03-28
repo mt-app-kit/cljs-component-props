@@ -5,7 +5,7 @@
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
-
+ 
 (defn update-props!
   ; @description
   ; Updates the dynamic properties of the component (stored in the common state atom).
