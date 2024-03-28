@@ -3,7 +3,7 @@
 
 ### Overview
 
-The <strong>cljs-component-props</strong> is a simple component property and preset handler for UI components in Clojure projects.
+The <strong>cljs-component-props</strong> is a simple UI component property and preset handler for Clojure projects.
 
 ### deps.edn
 
